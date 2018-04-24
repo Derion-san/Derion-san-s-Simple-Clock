@@ -12,7 +12,7 @@ function createWindow () {
                                   width: newWidth,
                                   height: newHeight})
 
-  mainWindow.loadURL(`file://${__dirname}/pages/mainPage.html`)
+  mainWindow.loadURL(`file://${__dirname}/application/mainPage.html`)
 
 
   //mainWindow.webContents.openDevTools()   // Open the DevTools?
