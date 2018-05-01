@@ -25,10 +25,17 @@ function clockModule() {
     }
     
     //adding leading zeros
+    cHours   = addLeadingZero(cHours);
     cMinutes = addLeadingZero(cMinutes);
     cSeconds = addLeadingZero(cSeconds);
-    document.getElementById('TestDisplay').innerHTML =
-    "The time is: " + cHours + ":" + cMinutes + ":" + cSeconds;
+    
+    document.getElementById('clockHours').innerHTML = cHours;
+    document.getElementById('clockMinutes').innerHTML = cMinutes;
+    document.getElementById('clockSeconds').innerHTML = cSeconds;
+    
+    //document.getElementById('TestDisplay').innerHTML = "The time is: " + cHours + ":" + cMinutes + ":" + cSeconds;
+    
+    
     var t = setTimeout(clockModule, 500);
 }
 
